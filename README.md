@@ -11,5 +11,14 @@ This needs to be run on Python 2.X
 
 <hr>
 
+Instructions for running the SXSW Website scraper
+
+1. python scrape.py > sxswscrape.txt
+2. You may need to update the "url" variable depending on which year you are using this. You can just modify the year in the link, but it doesn't hurt to check.
+3. The current pushed sxswscrape.txt is current as of 2/17/17. Feel free to update it as needed.
+
+<hr>
+
 The current list of SXSW Artists is current as of 2/17/17.
 Some artists that are listed differently on the website or have symbols(&,ect.) in their name may not be found.
+
