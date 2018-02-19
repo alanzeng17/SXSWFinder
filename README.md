@@ -2,6 +2,11 @@ Instructions for running SXSWFinder
 
 This needs to be run on Python 2.X
 
+FOR FIRST USE:
+In order to properly use, need to create a spotify developer account, create an app, and obtain a client_id and a client secret. Be sure to add the URI link below to the redirect links in the settings of the the app dashboard. 
+
+<hr>
+
 1. Open terminal, and navigate to where main.py is stored.
 2. type: python main.py <Spotify Username>
 3. (OPTIONAL) add a “> out.txt” without the quotations to the above command in order to pipe the output to a text file.

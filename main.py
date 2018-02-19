@@ -10,6 +10,14 @@ import unicodedata
 f = open("sxswscrape.txt")
 data = []
 setS = []
+
+#uncomment to set your own values
+#In order to properly use, need to create a spotify developer account, create an app, and obtain a client_id and a client secret. Be sure to add the
+#URI link below to the redirect links in the settings of the the app dashboard. 
+client_id = '299b9eecef874e1c89aa53a205190b4f'
+client_secret = '***********************'
+redirect_uri = 'http://localhost:8888/callback'
+
 for l in f.readlines():
     s = str(l).rstrip('\n')
     #print s
@@ -31,7 +39,9 @@ else:
 
 
     
-token = util.prompt_for_user_token(username)
+#token = util.prompt_for_user_token(username)
+#uncomment this once you have set your own values
+token = util.prompt_for_user_token(username,client_id=client_id,client_secret=client_secret,redirect_uri=redirect_uri)
 if token:
     sp = spotipy.Spotify(auth=token)
     playlists = sp.user_playlists(username)
